@@ -1,0 +1,4 @@
+//name,
+//priceInCents,
+//inStock,
+//weight
