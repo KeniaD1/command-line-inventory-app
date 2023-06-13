@@ -1,5 +1,6 @@
 const chalk = require('chalk');
-const { readJSONFile, writeJSONFile } = require("./src/helper")
+const { readJSONFile, writeJSONFile } = require("./src/help")
+const {index}=require("./src/inventoryController")
 
 function run() {
     inform("Welcome to Our App! \n\n")
@@ -14,10 +15,12 @@ function run() {
 
     switch (action) {
         case "index":
-            
+            const inventory =  index (arrayOfProducts)
+            inform(inventory)
             break;
         case "show":
-       
+            const showInventory = show (arrayOfProducts)
+            inform(showInventory)
             break;
 
         case "edit":
