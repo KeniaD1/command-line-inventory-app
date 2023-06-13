@@ -14,29 +14,21 @@ function run() {
 
     switch (action) {
         case "index":
-            const styleView = index(styles)
-            inform(styleView);
+            
             break;
         case "show":
-            showController(styles)
-            //inform(viewShow);
+       
             break;
 
         case "edit":
-            const styleId = process.argv[3];
-            const updatedName = process.argv[4];
-            editStyleController(styles, styleId, updatedName);
-            writeToFile = true;
+           
             break;
 
         case "create":
-            createStyleController(styleId, amount, styles)
-            //updatedStyle = create(styles, styleId);
-            writeToFile = true;
+            ;
             break;
         case "destroy":
-            updatednewStyle = destroy(styles, styleId);
-            writeToFile = true;
+            
             break;
 
 
@@ -44,12 +36,7 @@ function run() {
             inform(chalk.blue("Hey, did you forget something? Your cart is empty 🫠"));
 
     }
-    if (writeToFile) {
-        writeJSONFile("data", "styles.json", styles);
-        inform("Thank you. Styles have been updated");
-    }
-    //put this in purchase controller for receipt
-
+    
 }
 run()
 
