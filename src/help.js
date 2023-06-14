@@ -5,9 +5,12 @@ const { readFileSync, writeFileSync } = require("node:fs")
 
 
 function readJSONFile(path, fileName){
-
+try{
     const object = readFileSync(`${path}/${fileName}`, "utf-8")
     return object ? JSON.parse(object) : []
+} catch (error) {
+    return [];
+}
 }
 
 
