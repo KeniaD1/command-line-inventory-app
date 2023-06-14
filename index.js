@@ -1,14 +1,12 @@
 const chalk = require('chalk');
 const { readJSONFile, writeJSONFile } = require("./src/help")
 const { index, show, create, edit, destroy } = require("./src/inventoryController")
-//const {addToCart} = require("./src/cartController")
 const inform = console.log
 
 function run() {
     inform("Welcome to Our App! \n\n")
 
     let list = readJSONFile("data", "sample.json")
-    // console.log("Here is the Data Read: ", customers)
     let cart = readJSONFile("data", "cart.json");
 
     const action = process.argv[2]; // What "action" did the User type in?

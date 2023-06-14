@@ -8,7 +8,6 @@ function index(arrayOfProducts) {
 }
 
 function show(productList, productId) {
-  //inform("Type of productList:", typeof productList)
   const showProductsId = productList.find((product) => product.id === productId);
   if (showProductsId) {
     inform(JSON.stringify([showProductsId], null, 2));
@@ -43,7 +42,6 @@ function create(productList, name, priceInCents, inStock, weight) {
   if (!Array.isArray(productList)) {
     productList = []; // Initialize productList as an empty array
 }
- // productList = readJSONFile("data", "sample.json");
   productList.push(newProduct);
 
   writeJSONFile("data", "sample.json", productList);
