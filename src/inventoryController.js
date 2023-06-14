@@ -50,13 +50,22 @@ function create(productList, name, priceInCents, inStock, weight) {
   return newProduct;
 }
 
-
-
+function destroy(productList, productId,) {
+    const proIndex = productList.findIndex((product) => product.id === productId);
+  
+    if (proIndex > -1) {
+      productList.splice(proIndex, 1);
+      inform("Puuurrr product successfully removed from inventory");
+    } else {
+      inform("Product not found. No action taken");
+    }
+  }
 
 
 module.exports = {
   index,
   show,
   create,
-  edit
+  edit,
+  destroy
 }

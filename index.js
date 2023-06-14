@@ -1,6 +1,6 @@
 const chalk = require('chalk');
 const { readJSONFile, writeJSONFile } = require("./src/help")
-const { index, show, create , edit} = require("./src/inventoryController")
+const { index, show, create , edit, destroy} = require("./src/inventoryController")
 const inform = console.log
 
 function run() {
@@ -42,6 +42,9 @@ function run() {
             break;
 
         case "destroy":
+            const destroyProduct  = process.argv[3];
+      destroy(list, destroyProduct);
+      writeToFile = true;
 
             break;
 
