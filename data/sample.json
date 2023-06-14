@@ -1,23 +1,72 @@
 [
     {
-        "id": " ",
+        "id": "12453797955kk",
         "name": "Cherry Drop Lip Gloss",
         "priceInCents": "12.46",
-        "inStock": "6",
+        "inStock": true,
         "weight": "0.46"
     },
     {
-        "id": "",
+        "id": "1245379789ke",
         "name": "Melanin Skin Body Oil",
         "priceInCents": "23.00",
-        "inStock": "12",
+        "inStock": true,
         "weight": "0.5"
     },
     {
-       " id":"",
+        " id": "12453797955kj",
         "name": "Melanin Skin Body Scrub",
         "priceInCents": "27.00",
-        "inStock": "22",
+        "inStock": true,
         "weight": "0.74"
+    },
+    {
+        "id": "SBSRLSlF9TvZcdAELV3yg",
+        "name": "Diva Nail Polish - Red",
+        "priceInCents": null,
+        "inStock": false,
+        "weight": null
+    },
+    {
+        "id": "2yyisLDWxeMTtL0mfVw88",
+        "name": "Queen concealer",
+        "priceInCents": null,
+        "inStock": false,
+        "weight": null
+    },
+    {
+        "id": "icJ2uT-i9T_266auYEFVY",
+        "name": "999",
+        "priceInCents": null,
+        "inStock": false,
+        "weight": null
+    },
+    {
+        "id": "SYmmLaJLLhsejV4Y_hMAC",
+        "name": "Chocolate Lip Pencil",
+        "priceInCents": 999,
+        "inStock": true,
+        "weight": 0
+    },
+    {
+        "id": "IKobjjoLyW6cqA2yNpcLq",
+        "name": "Chocolate Lip Pencil RESTOCK",
+        "priceInCents": 999,
+        "inStock": true,
+        "weight": 0
+    },
+    {
+        "id": "4h2cPDbVDYd5OBEU5KzXw",
+        "name": "Diva Nail Polish - Yellow",
+        "priceInCents": 999,
+        "inStock": true,
+        "weight": "0.00"
+    },
+    {
+        "id": "jNLz2A0Z3Or8URcZG_5yK",
+        "name": "Chocolate Lip Pencil RESTOCK AGAIN",
+        "priceInCents": 999,
+        "inStock": true,
+        "weight": "0.90"
     }
 ]
