@@ -8,7 +8,7 @@ function index(arrayOfProducts) {
 }
 
 function show(productList, productId) {
-  inform("Type of productList:", typeof productList)
+  //inform("Type of productList:", typeof productList)
   const showProductsId = productList.find((product) => product.id === productId);
   if (showProductsId) {
     inform(JSON.stringify([showProductsId], null, 2));
